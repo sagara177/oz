@@ -13,13 +13,13 @@ Image Create
 
     oz-install -p -u -d3 -a centos6.ks -x centos65-libvirt.xml centos65.tdl
     qemu-img convert -c /var/lib/libvirt/images/centos-6.5.x86_64.qcow2 -O qcow2 /root/centos-6.5-`date '+%Y%m%d'`.0.x86_64.qcow2
-    rm -f /var/lib/oz/icicletmp/centos-6.5.x86_64
-    rm -rf /var/lib/libvirt/images/centos-6.5.x86_64.qcow2
+    rm -rf /var/lib/oz/icicletmp/centos-6.5.x86_64
+    rm -f /var/lib/libvirt/images/centos-6.5.x86_64.qcow2
 
     oz-install -p -u -d3 -a centos6-epel.ks -x centos65-epel-libvirt.xml centos65-epel.tdl
     qemu-img convert -c /var/lib/libvirt/images/centos-6.5-epel.x86_64.qcow2 -O qcow2 /root/centos-6.5-epel-`date '+%Y%m%d'`.0.x86_64.qcow2
-    rm -f /var/lib/oz/icicletmp/centos-6.5-epel.x86_64
-    rm -rf /var/lib/libvirt/images/centos-6.5-epel.x86_64.qcow2
+    rm -rf /var/lib/oz/icicletmp/centos-6.5-epel.x86_64
+    rm -f /var/lib/libvirt/images/centos-6.5-epel.x86_64.qcow2
 
 Cleanup
 -------
