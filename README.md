@@ -33,7 +33,7 @@ Test
 
     . ~/keystonerc_admin
     nova flavor-create m2.small 6 1024 2 1
-    glance image-create --name 'CentOS 6.5' --disk-format qcow2 --container-format bare --file ~/centos-6.5-*.0.x86_64.qcow2 --is-public True --progress
+    glance image-create --name 'CentOS 6.5' --disk-format qcow2 --container-format bare --file ~/centos-6.5-epel-*.0.x86_64.qcow2 --is-public True --progress
 
     . ~/keystonerc_demo
     nova keypair-add --pub-key ~/.ssh/id_rsa.pub root
